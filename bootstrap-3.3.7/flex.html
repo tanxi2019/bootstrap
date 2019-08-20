@@ -2,9 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>flex</title>
+    <style type="text/css">
+        *{ margin: 0; padding: 0;}
+        .all{width: 1200px;height:auto;overflow: hidden;margin: 0 auto;}
+        .head{width: 100%;height: auto;background: #2b542c; padding: 30px 0;}
+        .flex-container{display: flex;}
+        .flex-container{background-color: #F0f0f0;}
+        .flex-container .flex-item{line-height: 200px; width: 200px; height:200px;background-color: #B1FF84;text-align: center;}
+        .flex-container .flex-item:nth-child(2n+1){background-color: #F5DE25; }
+        .felx{width: 100%;height: auto;background: #2aabd2; padding: 30px 0;}
+        .box{width: 100%;height: 600px;display: flex;   flex-wrap: wrap;
+            justify-content:space-between; align-content: center;
+        }
+        .box-data ul li{
+            width:200px;
+            height: 200px;
+            background: #54ff58;
+            border: 1px solid #ccc;
+            font-size: 50px;
+            text-align: center;
+            line-height: 200px;
+            color:#fff;
+            list-style-type: none;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-$END$
+<!--flex_1-->
+<div class="head">
+    <div class="all">
+        <div class="flex-container">
+            <div class="flex-item">box1</div>
+            <div class="flex-item">box2</div>
+            <div class="flex-item">box3</div>
+            <div class="flex-item">box4</div>
+            <div class="flex-item">box5</div>
+            <div class="flex-item">box6</div>
+        </div>
+    </div>
+</div>
+<!--flex_2-->
+<div class="felx">
+    <div class="all">
+        <div class="box-data">
+            <ul class="box">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
